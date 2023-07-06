@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getx_demo/utils/routes/app_routes.dart';
-
-import 'utils/routes/routes_name.dart';
+import 'package:getx_demo/view/splash/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,9 +16,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(),
-      // home: const MyHomePage(),
-      getPages: AppRoutes.getPages,
-      initialRoute: RoutesName.splashScreen,
+      home: const SplashScreen(),
+      // getPages: AppRoutes.getPages,
+      // initialRoute: RoutesName.splashScreen,
     );
   }
 }
